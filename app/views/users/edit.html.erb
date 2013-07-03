@@ -1,2 +1,13 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<div id="users-edit">
+  <div class="form">
+    <%= form_for @user do |f| %>
+    <div class="avatar">
+      <%= f.label :avatar %>
+      <%= f.file_field :avatar %>
+    </div>
+    <div class="submit">
+      <%= f.submit %>
+    </div>
+    <% end %>
+  </div>
+</div>

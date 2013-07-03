@@ -1,2 +1,8 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div id="users-show">
+  <div class="username">
+    <%= @user.username %>
+  </div>
+  <div class="avatar">
+    <%= image_tag @user.avatar(:medium) %>
+  </div>
+</div>
