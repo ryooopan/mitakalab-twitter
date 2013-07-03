@@ -1,2 +1,8 @@
-<h1>Tweets#index</h1>
-<p>Find me in app/views/tweets/index.html.erb</p>
+<div id="tweets-index">
+  <div class="tweets">
+    <% @tweets.each do |tweet| %>
+      <%= render 'tweet', :tweet => tweet %>
+      <%= link_to 'show', tweet %>
+    <% end %>
+  </div>
+</div>
