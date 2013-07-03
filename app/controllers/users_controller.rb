@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authorize, only: [:edit, :update, :destroy]
+
   def index
   end
 
@@ -20,6 +22,12 @@ class UsersController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
   private
